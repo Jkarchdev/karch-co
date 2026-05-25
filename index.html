@@ -217,10 +217,17 @@ body.is-hover .cursor-dot{ width:0; height:0; }
   padding-right: clamp(20px, 3vw, 40px);
 }
 .hero .hero-name .row{ display:block; overflow:hidden; padding-bottom:0.28em; margin-bottom:-0.1em; }
-.hero .hero-name .outline{
+.hero .hero-name .outline-amber{
   color: transparent;
-  -webkit-text-stroke: 2px var(--ink-2);
-  font-style: normal;
+  -webkit-text-stroke: 2px var(--accent);
+  font-style: italic;
+}
+.hero .hero-name .stair{ padding-left: clamp(24px, 5vw, 72px); }
+.hero .hero-name-rule{
+  width: 36px; height: 2px; background: var(--accent);
+  margin-top: 24px;
+  margin-left: clamp(24px, 5vw, 72px);
+  opacity: 0; animation: fadeIn .8s var(--ease) .6s forwards;
 }
 @media (max-width: 900px){
   .hero{ grid-template-columns: 1fr; }
@@ -770,12 +777,13 @@ body.is-hover .cursor-dot{ width:0; height:0; }
 
   <div class="hero-name">
     <span class="row r1">
-      <span class="reveal-word outline" style="animation-delay:0s">Karch</span>
+      <span class="reveal-word" style="animation-delay:0s">Karch</span>
     </span>
-    <span class="row r2">
-      <span class="reveal-word it amber" style="animation-delay:.12s">&amp;</span>
-      <span class="reveal-word it amber" style="animation-delay:.20s">Co</span>
+    <span class="row r2 stair">
+      <span class="reveal-word outline-amber" style="animation-delay:.12s">&amp;</span>
+      <span class="reveal-word outline-amber" style="animation-delay:.20s">Co</span>
     </span>
+    <div class="hero-name-rule" aria-hidden="true"></div>
   </div>
 
   <h1>
