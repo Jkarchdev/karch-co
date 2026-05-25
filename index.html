@@ -211,6 +211,8 @@ body.is-hover .cursor-dot{ width:0; height:0; }
   font-family:var(--f-display); font-weight:400;
   font-size: clamp(72px, 15vw, 240px);
   line-height:.88; letter-spacing:-0.03em;
+  border-left: 2px solid var(--accent);
+  padding-left: clamp(16px, 2vw, 28px);
   border-right: 1px solid var(--line);
   padding-right: clamp(20px, 3vw, 40px);
 }
@@ -218,7 +220,7 @@ body.is-hover .cursor-dot{ width:0; height:0; }
 @media (max-width: 900px){
   .hero{ grid-template-columns: 1fr; }
   .hero h1{ grid-column: 1; }
-  .hero .hero-name{ grid-column: 1; grid-row: auto; border-right: none; padding-right: 0; }
+  .hero .hero-name{ grid-column: 1; grid-row: auto; border-left: none; padding-left: 0; border-right: none; padding-right: 0; }
 }
 .hero .eyebrow{
   display:flex; justify-content:space-between; align-items:start;
@@ -767,12 +769,12 @@ body.is-hover .cursor-dot{ width:0; height:0; }
     </span>
     <span class="row r2">
       <span class="reveal-word it amber" style="animation-delay:.12s">&amp;</span>
-      <span class="reveal-word it" style="animation-delay:.20s">Co</span>
+      <span class="reveal-word it amber" style="animation-delay:.20s">Co</span>
     </span>
   </div>
 
   <h1>
-    <div class="hero-kicker">— Quality Web Design</div>
+    <div class="hero-kicker">— Est. 2026</div>
     <span class="row r1"><span data-split data-delay="0">Web</span></span>
     <span class="row r2"><span data-split data-delay="0.15" class="it">Design.</span><span class="hero-underline" aria-hidden="true"></span></span>
     <div class="hero-tagline">At a price that makes sense.</div>
